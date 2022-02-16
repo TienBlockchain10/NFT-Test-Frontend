@@ -103,7 +103,7 @@ function App() {
 
   return (
     <div className = 'main-app'>
-      <h1>Cool Collegiates Collection</h1>
+      <h1>Kool Kollegiates Kollection</h1>
     <div>
     {currentAccount ? mintNftButton() : connectWalletButton()}
     </div>
