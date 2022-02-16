@@ -69,7 +69,7 @@ function App() {
         console.log("Initialize payment");
         let nftTxn = await nftContract.mintNFTs(1, {value: ethers.utils.parseEther("0.015")});
 
-        console.log("Mining... Please wait");
+        alert("Mining... Please wait");
         await nftTxn.wait();
         console.log(`Mined, see transaction: https://rinkeby.etherscan.io/tx/${nftTxn.hash}`);
 
@@ -112,6 +112,9 @@ function App() {
       <h1>Cool Collegiates Collection</h1>
       <div className = 'mint-button-div'>
         {currentAccount ? mintNftButton() : connectWalletButton()}
+      </div>
+      <div>
+        {}
       </div>
     </div>
   )
