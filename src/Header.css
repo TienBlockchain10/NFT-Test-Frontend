@@ -1,0 +1,8 @@
+.header-list{
+    list-style-type: none;
+    text-decoration: none!important;
+}
+a {
+    text-decoration: none!important;
+    color: inherit;
+}

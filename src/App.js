@@ -1,8 +1,10 @@
 import { useEffect } from 'react';
 import './App.css';
+import Header from './Header'
 import contract from './contracts/NFTCollectible.json';
 import React, { useState } from 'react'
 import { ethers } from 'ethers';
+
 
 
 const contractAddress = "0x036d5E89a5cD2219a7669d4c0C54483E8343f565";
@@ -102,11 +104,15 @@ function App() {
 
 
   return (
+    
     <div className = 'main-app'>
-      <h1>Kool Kollegiates Kollection</h1>
-    <div>
-    {currentAccount ? mintNftButton() : connectWalletButton()}
-    </div>
+      <div className='header-main'>
+        <Header />
+      </div>
+      <h1>Cool Collegiates Collection</h1>
+      <div className = 'mint-button-div'>
+        {currentAccount ? mintNftButton() : connectWalletButton()}
+      </div>
     </div>
   )
 }

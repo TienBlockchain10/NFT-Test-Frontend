@@ -1,6 +1,17 @@
+.header-main {
+  margin-top:-4%;
+  text-align: right;
+}
+
 .main-app {
+  margin: 5%;
+  font-size:150%;
+  font-family:'Courier New', Courier, monospace;
+}
+
+.mint-button-div {
   text-align: center;
-  margin: 100px;
+  margin-top: 12%;
 }
 
 .cta-button {
@@ -14,10 +25,15 @@
 }
 
 .connect-wallet-button {
-  background: rgb(32, 129, 226);
-
+  background: rgb(106, 108, 189);
+}
+.connect-wallet-button:hover {
+  background: rgb(200, 210, 250);
 }
 
 .mint-nft-button {
-  background: rgb(92, 27, 212);
+  background: rgb(106, 108, 189);
+}
+.mint-nft-button:hover {
+  background: rgb(200, 210, 250);
 }
